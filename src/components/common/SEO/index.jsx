@@ -14,7 +14,11 @@ import {
   logo,
 } from 'data/config';
 
-export const SEO = ({ title = defaultTitle, description = defaultDescription, location = '' }) => {
+export const SEO = ({
+  title = defaultTitle,
+  description = defaultDescription,
+  location = '',
+}) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -29,16 +33,8 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
 		"contactPoint": [{
 			"@type": "ContactPoint",
 			"email": "${contact.email}",
-			"telephone": "${contact.phone}",
 			"contactType": "customer service"
 		}],
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "${address.city}",
-			"addressRegion": "${address.region}",
-			"addressCountry": "${address.country}",
-			"postalCode": "${address.zipCode}"
-		},
 		"sameAs": [
 			"${socialLinks.twitter}",
 			"${socialLinks.google}",
