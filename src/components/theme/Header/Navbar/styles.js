@@ -11,6 +11,15 @@ export const Brand = styled.a`
   color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
 
   @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    mix-blend-mode: ${({ theme }) =>
+      theme === 'light' ? 'unset' : 'difference'};
+  }
+`;
+
+export const ThemeTogglerDiv = styled.div`
+  position: sticky;
+  right: 60px;
+  @media (min-width: 960px) {
+    display: none;
   }
 `;

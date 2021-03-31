@@ -34,7 +34,8 @@ export const Details = styled.div`
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) =>
+        theme === 'light' ? 'unset' : 'difference'};
     }
   }
 
@@ -46,7 +47,8 @@ export const Details = styled.div`
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#707070')};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) =>
+        theme === 'light' ? 'unset' : 'difference'};
     }
   }
 `;

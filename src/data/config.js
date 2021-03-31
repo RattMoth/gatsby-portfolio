@@ -10,7 +10,7 @@ module.exports = {
     github: 'https://github.com/RattMoth',
     linkedin: 'https://www.linkedin.com/in/matt-tyler-roth/',
   },
-  googleAnalyticsID: '',
+  googleAnalyticsID: 'test',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {
