@@ -47,7 +47,7 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: #212121;
+    color: #19323c;
   }
 
   @media (max-width: 680px) {
