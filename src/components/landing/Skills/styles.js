@@ -3,13 +3,13 @@ import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
   background-image: url(${detailsIllustration});
-  background-size: contain;
+  background-size: 25vh;
   background-position: left top;
   background-repeat: no-repeat;
 `;
 
 export const SkillsWrapper = styled.div`
-  padding: 4rem 0;
+  padding-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
