@@ -2,7 +2,6 @@ module.exports = {
   defaultTitle: 'Matt Roth',
   logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
   author: 'Matt Roth',
-  url: 'https://portfolio.smakosh.com',
   legalName: 'Matt Roth',
   defaultDescription: 'I’m Matt Roth, a Full Stack Web Developer',
   socialLinks: {

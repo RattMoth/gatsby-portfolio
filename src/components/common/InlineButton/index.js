@@ -10,19 +10,11 @@ export const CheckBoxLabel = styled.label`
 `;
 export const CheckBox = styled.input`
   user-select: none;
-  opacity: 0;
+  display: none;
   z-index: 1;
-  border: 2px solid #96979c;
-  border-radius: 3px;
   }
   &:checked + ${CheckBoxLabel} {
-    background: #cccae1;
+    background: #aadcec;
     color: #fff;
-    &::after {
-      border-radius: 50%;
-      width: 18px;
-      height: 18px;
-      transition: 0.5s;
-    }
   }
 `;

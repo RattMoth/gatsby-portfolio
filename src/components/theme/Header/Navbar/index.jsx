@@ -16,7 +16,7 @@ const Navbar = () => {
         to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         theme={theme}
       >
-        My Resume
+        My Résumé
       </Brand>
       <NavbarLinks desktop />
       <ThemeTogglerDiv>

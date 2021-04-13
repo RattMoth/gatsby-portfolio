@@ -47,41 +47,64 @@ export const Projects = () => {
   return (
     <Wrapper as={Container} id="projects">
       <h2>Projects</h2>
-      {/* <Grid>
-        {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
-            <Card theme={theme}>
-              <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <TitleWrap>
-                <Stats theme={theme}>
-                  <div>
-                    <Star color={theme === "light" ? "#000" : "#fff"} />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color={theme === "light" ? "#000" : "#fff"} />
-                    <span>{node.forkCount}</span>
-                  </div>
-                </Stats>
-                <Stats theme={theme}>
-                  <Languages>
-                    {
-                      node.languages.nodes.map(({ id, name }) => (
-                        <span key={id}>
-                          {name}
-                        </span>
-                      ))
-                    }
-                  </Languages>
-                </Stats>
-              </TitleWrap>
-            </Card>
-          </Item>
-        ))}
-      </Grid> */}
+      <Grid>
+        <Item
+          key={1}
+          as="a"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>Test Name</h4>
+              <p>Test Description</p>
+            </Content>
+            <TitleWrap>
+              <div>
+                <Star color={theme === 'light' ? '#000' : '#fff'} />
+                <span>69420</span>
+              </div>
+              <div>
+                <Fork color={theme === 'light' ? '#000' : '#fff'} />
+                <span>69420</span>
+              </div>
+              <Stats theme={theme}>
+                <Languages>ENgris</Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+        <Item
+          key={2}
+          as="a"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>Test Name</h4>
+              <p>Test Description</p>
+            </Content>
+            <TitleWrap>
+              <div>
+                <Star color={theme === 'light' ? '#000' : '#fff'} />
+                <span>69420</span>
+              </div>
+              <div>
+                <Fork color={theme === 'light' ? '#000' : '#fff'} />
+                <span>69420</span>
+              </div>
+              <Stats theme={theme}>
+                <Languages>ENgris</Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+      </Grid>
     </Wrapper>
   );
 };

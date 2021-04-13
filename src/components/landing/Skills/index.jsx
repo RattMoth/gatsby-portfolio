@@ -28,7 +28,7 @@ export const Skills = () => {
         </Thumbnail> */}
         <Details theme={theme}>
           <h1>
-            A
+            A{' '}
             <CheckBox
               id="checkbox1"
               type="radio"

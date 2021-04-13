@@ -8,7 +8,9 @@ const useMedia = (queries, values, defaultValue) => {
 
     const getValue = () => {
       const index = mediaQueryLists.findIndex(mql => mql.matches);
-      return typeof values[index] !== 'undefined' ? values[index] : defaultValue;
+      return typeof values[index] !== 'undefined'
+        ? values[index]
+        : defaultValue;
     };
 
     setValue(getValue);
