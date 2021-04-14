@@ -23,18 +23,18 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
-        url: 'https://api.github.com/graphql',
-        headers: {
-          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
-        },
-        fetchOptions: {},
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-graphql',
+    //   options: {
+    //     typeName: 'GitHub',
+    //     fieldName: 'github',
+    //     url: 'https://api.github.com/graphql',
+    //     headers: {
+    //       Authorization: `Bearer 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`,
+    //     },
+    //     fetchOptions: {},
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {

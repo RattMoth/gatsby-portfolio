@@ -5,17 +5,14 @@ import { Container } from 'components/common';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Brand, ThemeTogglerDiv } from './styles';
 import ToggleTheme from '../ToggleTheme';
+import Pdf from '../../../../../static/matt-roth-resume.pdf';
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <Wrapper as={Container}>
-      <Brand
-        as={Link}
-        to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        theme={theme}
-      >
+      <Brand href={Pdf} theme={theme}>
         My Résumé
       </Brand>
       <NavbarLinks desktop />

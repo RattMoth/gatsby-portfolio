@@ -34,7 +34,7 @@ export const Skills = () => {
               type="radio"
               name="length-toggle"
               // Allow short to be selected by default
-              checked={aboutLength === short}
+              defaultChecked
               onClick={() => setAboutLength(short)}
             />
             <CheckBoxLabel htmlFor="checkbox1">little</CheckBoxLabel>

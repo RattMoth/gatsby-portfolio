@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     color: #000;
     text-decoration: none;
 
-    color: ${({ theme }) => (theme === 'light' ? '#000' : '#800020')};
+    color: ${({ theme }) => (theme === 'light' ? '#000' : '#000')};
     @media (max-width: 960px) {
       color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     }

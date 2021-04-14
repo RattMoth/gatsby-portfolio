@@ -13,7 +13,6 @@ const NavbarLinks = ({ desktop }) => {
       <AnchorLink href="#projects">Projects</AnchorLink>
       <AnchorLink href="#contact">Contact</AnchorLink>
       {desktop && <ToggleTheme />}
-      {/* <ToggleTheme /> */}
     </Wrapper>
   );
 };

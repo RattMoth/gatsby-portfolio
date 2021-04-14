@@ -31,7 +31,14 @@ export const Item = styled.div`
   }
 
   p {
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#fff')};
+  }
+
+  a:visited {
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `;
 
@@ -59,8 +66,7 @@ export const Stats = styled.div`
     }
 
     span {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-      margin-left: 0.5rem;
+      color: ${({ theme }) => (theme === 'light' ? 'black' : '#fff')};
     }
   }
 `;
@@ -68,4 +74,7 @@ export const Stats = styled.div`
 export const Languages = styled.div`
   opacity: 0.5;
   font-size: 14px;
+  border: 1px solid gray;
+  padding: 0.125rem;
+  background-color: #ebebeb;
 `;
