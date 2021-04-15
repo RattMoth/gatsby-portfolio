@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
+import { StaticImage } from 'gatsby-plugin-image';
 import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
 
 export const Projects = () => {
@@ -33,16 +34,15 @@ export const Projects = () => {
       <h2>Projects</h2>
       <Grid>
         {edges.map(({ node }) => (
-          <Item
-            key={node.id}
-            as="a"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            theme={theme}
-          >
+          <Item key={node.id} theme={theme}>
             <Card theme={theme}>
-              <img src={node.frontmatter.img} alt={node.frontmatter.alt} />
+              <StaticImage
+                placeholder="blurred"
+                width={400}
+                height={250}
+                src="../../../../static/screenshots/face-recognition-screenshot.jpg"
+                alt={node.frontmatter.alt}
+              />
               <Content>
                 <h4>{node.frontmatter.title}</h4>
                 <div dangerouslySetInnerHTML={{ __html: node.html }} />

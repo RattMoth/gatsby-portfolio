@@ -16,7 +16,12 @@ export const Footer = () => (
           and{' '}
           <span aria-label="coffee" role="img">
             ☕
-          </span>{' '}
+          </span>
+          {' | '}
+        </span>
+        <span>
+          Inspired by{' '}
+          <a href="https://github.com/smakosh/gatsby-portfolio-dev">smakosh</a>
         </span>
       </Details>
       <Links>

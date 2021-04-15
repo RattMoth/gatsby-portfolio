@@ -14,12 +14,20 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static`,
+        path: `${__dirname}/static/`,
       },
     },
     `gatsby-transformer-remark`,
